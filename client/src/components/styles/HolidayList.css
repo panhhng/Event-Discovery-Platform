@@ -1,0 +1,36 @@
+/* Holiday list container styling */
+.holiday-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Individual holiday box styling */
+  .holiday-box {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .holiday-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .holiday-box h2 {
+    margin-top: 0;
+    color: #4CAF50; /* Lively green color for holiday names */
+  }
+  
+  .holiday-box p {
+    margin: 10px 0;
+    color: #333;
+  }
+  

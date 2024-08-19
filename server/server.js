@@ -47,6 +47,7 @@ app.get('/api/events', async (req, res) => {
       },
     });
 
+    console.log(response.data.events);
     res.json(response.data.events); // Send only the events data
   } catch (error) {
     console.error('Error fetching events:', error.message);

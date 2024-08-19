@@ -1,6 +1,7 @@
 import React from 'react';
 import 'aframe';
 import 'aframe-react';
+import './styles/ARViewer.css'
 
 const ARViewer = () => (
   <a-scene embedded>

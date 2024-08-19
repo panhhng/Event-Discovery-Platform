@@ -1,0 +1,48 @@
+/* EventForm.css */
+
+.event-form-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-form-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+  
+  .event-form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .event-form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+  }
+  
+  .event-form-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-form-button:hover {
+    background-color: #2980b9;
+  }
+  

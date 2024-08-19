@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './styles/HolidayList.css';  // Import the CSS file
 
 const HolidayList = () => {
   const [holidays, setHolidays] = useState([]);
@@ -10,7 +11,6 @@ const HolidayList = () => {
       .then(response => {
         console.log('API Response:', response.data);
 
-        // Check if holidays are present in the response
         if (response.data && Array.isArray(response.data.holidays)) {
           setHolidays(response.data.holidays);
         } else {
@@ -29,23 +29,23 @@ const HolidayList = () => {
   }
 
   return (
-    <div>
+    <div className="holiday-container">
       <h1>Holidays</h1>
-      <ul>
+      <div className="holiday-list">
         {holidays.length > 0 ? (
           holidays.map(holiday => (
-            <li key={holiday.id}>
+            <div className="holiday-box" key={holiday.id}>
               <h2>{holiday.name}</h2>
               <p>Date: {holiday.date}</p>
               <p>Observed: {holiday.observed}</p>
               <p>Type: {holiday.type}</p>
               <p>Public: {holiday.public ? 'Yes' : 'No'}</p>
-            </li>
+            </div>
           ))
         ) : (
           <p>No holidays found.</p>
         )}
-      </ul>
+      </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import EventList from './components/EventList';
 import EventForm from './components/EventForm';
 import HolidayList from './components/HolidayList';
 import ARViewer from './components/ARViewer';
+import './App.css';
 
 function App() {
   return (
